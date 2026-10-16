@@ -1,4 +1,4 @@
-# Task Tracker — JTRONIX Frontend Internship Assessment
+# Task Tracker — JTRONIX Frontend ✅
 
 A responsive Task Tracker web application developed using HTML, CSS, and JavaScript as part of the JTRONIX Frontend Internship Assessment.
 
