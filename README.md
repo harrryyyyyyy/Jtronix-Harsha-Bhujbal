@@ -1,47 +1,58 @@
 # Task Tracker — JTRONIX Frontend Internship Assessment
 
-A responsive task tracker built with plain HTML, CSS, and JavaScript.
+A responsive Task Tracker web application developed using HTML, CSS, and JavaScript as part of the JTRONIX Frontend Internship Assessment.
+
+## Live Demo
+
+**Deployed Website:** https://harrryyyyyyy.github.io/Jtronix-Harsha-Bhujbal/
 
 ## Features
-- Add tasks and block empty/whitespace-only entries.
-- Mark tasks as Completed or Pending.
-- Delete individual tasks.
-- Display total, completed, and pending counts.
-- Filter tasks by All, Pending, or Completed (with a visible “Filter by:” label).
-- Automatically save tasks and statuses in browser `localStorage`.
-- Responsive layout that uses the available desktop width and adapts to mobile.
-- Clear completed tasks.
-- Accessible labels and keyboard focus indicators.
 
-## Run locally
-1. Extract the ZIP.
-2. Open the `JTRONIX_Task_Tracker` folder in Visual Studio Code.
-3. Open `index.html` in your browser, or use VS Code's Live Server extension.
+- **Add Tasks:** Create new tasks with input validation to prevent empty entries.
+- **Manage Task Status:** Mark tasks as Completed or Pending.
+- **Delete Tasks:** Remove individual tasks when they are no longer needed.
+- **Task Statistics:** View total, completed, and pending task counts.
+- **Filter Tasks:** Display All, Pending, or Completed tasks.
+- **Clear Completed Tasks:** Remove completed tasks in one action.
+- **Local Storage:** Automatically save tasks and their statuses in the browser, so they persist after refreshing the page.
+- **Responsive Design:** Adapt the interface for desktop, tablet, and mobile screens.
+- **User-Friendly Interface:** Clean layout, consistent purple-themed styling, accessible labels, and keyboard focus indicators.
 
-No backend, database, package installation, or API key is needed.
+## Technologies Used
 
-## Project files
-- `index.html` — page structure.
-- `style.css` — Pomp Power-inspired plum, purple, mauve, rose and lilac color palette; responsive layout.
-- `script.js` — task logic, filters, and localStorage persistence.
-- `screenshots/` — add screenshots of the running app before submission.
+- **HTML5** — Structure and content of the application.
+- **CSS3** — Styling, layout, colors, and responsive design.
+- **JavaScript** — Task management, filtering, status updates, and local storage functionality.
+- **Browser Local Storage** — Persistent storage of tasks on the user's device.
+- **GitHub Pages** — Hosting and deployment of the web application.
 
-## Storage
-Tasks are stored in this browser under `jtronix-task-tracker-v1`. Data is local to the current browser/device. Clearing browser site data can remove it.
+## Project Structure
 
-## Screenshot checklist
-Before submission, capture the running application and save images in `screenshots/`, e.g. `desktop.png`, `mobile.png`, and `filters.png`. Screenshots must be actual captures of the app.
+- `index.html` — Defines the structure of the application.
+- `style.css` — Contains the visual styling and responsive layout.
+- `script.js` — Implements task management functionality and local storage.
 
-## Assessment checklist
-- [x] Create and display tasks.
-- [x] Prevent empty tasks.
-- [x] Mark tasks Completed/Pending.
-- [x] Delete tasks.
-- [x] Show total and completed counts (pending count also shown).
-- [x] Filter All/Pending/Completed.
-- [x] Save tasks and statuses with localStorage.
-- [x] Responsive desktop/mobile layout.
-- [ ] Add actual application screenshots to `screenshots/`.
-- [ ] Optional: deploy publicly and add the URL.
+## How to Run Locally
 
-Submit the source code as a ZIP file or repository link, along with this README and application screenshots, as described in the assessment PDF.
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in a web browser, or use the Live Server extension.
+4. Start adding and managing tasks.
+
+No backend server, database, package installation, or API key is required.
+
+## Data Storage
+
+The application uses the browser's `localStorage` to save tasks and their completion statuses. Data is stored locally in the current browser and is not automatically shared across different devices or browsers.
+
+## Deployment
+
+The application is deployed using **GitHub Pages** and can be accessed through the Live Demo link above.
+
+## Assessment Highlights
+
+The project demonstrates fundamental frontend development skills, including semantic HTML, CSS styling, JavaScript DOM manipulation, event handling, form validation, local storage, responsive design, and deployment using GitHub Pages.
+
+---
+
+**Developed as part of the JTRONIX Frontend Internship Assessment.**
