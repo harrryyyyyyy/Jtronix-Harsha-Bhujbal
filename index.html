@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive task tracker application." />
+  <title>Task Tracker | JTRONIX Assessment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-banner">
+    <div class="banner-inner">
+      <div class="banner-brand">
+        <div class="banner-mark" aria-hidden="true">✓</div>
+        <h1>Task Tracker</h1>
+      </div>
+      <div class="header-date" id="today-label"></div>
+    </div>
+  </header>
+  <div class="app-shell">
+    <main>
+      <section class="panel add-panel" aria-labelledby="add-heading">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">GET ORGANIZED</span>
+            <h2 id="add-heading">Add a new task</h2>
+          </div>
+        </div>
+        <form id="task-form" class="task-form" novalidate>
+          <label class="sr-only" for="task-input">Task name</label>
+          <input id="task-input" name="task" type="text" maxlength="200"
+                 placeholder="What do you need to do?" autocomplete="off"
+                 aria-describedby="form-message" />
+          <button class="primary-button" type="submit"><span aria-hidden="true">＋</span> Add task</button>
+        </form>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="stats-grid" aria-label="Task summary">
+        <article class="stat-card">
+          <span class="stat-icon total-icon" aria-hidden="true">▤</span>
+          <div><p>Total tasks</p><strong id="total-count">0</strong></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon completed-icon" aria-hidden="true">✓</span>
+          <div><p>Completed</p><strong id="completed-count">0</strong></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon pending-icon" aria-hidden="true">◷</span>
+          <div><p>Pending</p><strong id="pending-count">0</strong></div>
+        </article>
+      </section>
+
+      <section class="panel tasks-panel" aria-labelledby="tasks-heading">
+        <div class="tasks-heading-row">
+          <div>
+            <span class="eyebrow">YOUR CHECKLIST</span>
+            <h2 id="tasks-heading">Your tasks <span id="visible-count" class="count-pill">0</span></h2>
+          </div>
+          <span class="save-status"><span class="save-dot" aria-hidden="true"></span> Auto-saving enabled</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="filter-area">
+            <span class="filter-label">Filter by:</span>
+            <div class="filter-group" role="group" aria-label="Filter tasks">
+              <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-button" type="button" data-filter="pending" aria-pressed="false">Pending</button>
+              <button class="filter-button" type="button" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+          </div>
+          <button id="clear-completed" class="text-button" type="button">Clear completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        <div id="empty-state" class="empty-state">
+          <div class="empty-illustration" aria-hidden="true">✓</div>
+          <h3 id="empty-title">A fresh start!</h3>
+          <p id="empty-description">Add your first task above and it will appear here.</p>
+        </div>
+        <p class="storage-note"><span aria-hidden="true">🔒</span> Your tasks are saved in this browser on this device.</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Task Tracker</span><span>Built for the Jtronix by Harsha Bhujbal</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
